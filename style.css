@@ -498,7 +498,7 @@ section.active {
     flex-direction: column;
     justify-content: center;
     padding-top: 2rem;
-    padding-left: 0rem;
+    
 }
 
 .hero h1 {
@@ -514,7 +514,8 @@ section.active {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
     line-height: 1.7;
-    padding-right: 85px;
+    text-align:justify;
+    padding-right:200px;
 }
 
 .cta-buttons {
@@ -584,6 +585,7 @@ section.active {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
     line-height: 1.7;
+    text-align: justify;
 }
 
 .about-image {
@@ -749,12 +751,14 @@ section.active {
 
 .timeline-desc li {
     margin-bottom: 0.5rem;
+    text-align: justify;    
 }
 
 /* Additional content for experience section */
 .experience-sidebar {
     background-color: var(--bg-secondary);
     padding: 2rem;
+    margin-right:30px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
 }
@@ -1360,7 +1364,7 @@ footer hr {
     .hero p {
         /* Adjust this value as needed */
         /* text-align: left; */
-        ;
+        
     }
 
     .cta-buttons {
@@ -1439,11 +1443,20 @@ footer hr {
     }
 
     .hero h1 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
-
+    .hero p{
+    text-align:justify;
+    padding-right:25px;
+    padding-left: 5px;
+    }
     .contact-form {
         padding: 1.5rem;
+    }
+
+    .experience-sidebar{
+        margin-right:20px;
+        margin-left: 20px;
     }
 
     .testimonials-container {

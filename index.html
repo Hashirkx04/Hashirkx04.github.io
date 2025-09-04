@@ -74,6 +74,18 @@
 </head>
 
 <body>
+    <!-- Fluid Cursor Background -->
+    <div style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        ">
+        <canvas id="fluid" style="width: 100vw; height: 100vh; display: block;"></canvas>
+    </div>
     <!-- Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
         <div class="animated-loader">
@@ -96,7 +108,7 @@
         <div class="sidebar-header">
             <img id="profile-photo" src="assets/hashirkhan.png" alt="Hashir Khan" class="avatar">
             <h1 class="name">HASHIR KHAN</h1>
-            <p class="tagline">Web Developer & AI Specialist</p>
+            <p class="tagline">Professional Developer Based in Pakistan</p>
         </div>
 
         <nav>
@@ -148,7 +160,7 @@
         <div class="sidebar-header">
             <img src="assets/hashirkhan.png" alt="Hashir Khan" class="avatar">
             <h1 class="name">HASHIR KHAN</h1>
-            <p class="tagline">Web Developer & AI Specialist</p>
+            <p class="tagline">Professional Developer Based in Pakistan</p>
         </div>
 
         <nav>
@@ -785,6 +797,8 @@
             window.addEventListener('scroll', checkScroll);
             checkScroll(); // Check on initial load
         });
+
+
     </script>
 </body>
 
